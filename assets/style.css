@@ -1,1 +1,71 @@
+/* Основные стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Заголовок */
+.header {
+  background-color: #2ecc71;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-title {
+  color: #ffffff;
+  font-size: 2.5em;
+}
+
+/* Основной контент */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Список новостей */
+.news-list h2 {
+  color: #2ecc71;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.news-item {
+  margin: 15px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-link {
+  font-size: 1.2em;
+  color: #e67e22;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  color: #d35400;
+}
+
+.news-date {
+  display: block;
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* Футер */
+.footer {
+  background-color: #2ecc71;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}

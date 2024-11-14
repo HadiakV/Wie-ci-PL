@@ -1,1 +1,11 @@
-
+{
+  "name": "my-news-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}

@@ -1,13 +1,13 @@
+module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addCollection("posts", function (collectionApi) {
+        return collectionApi.getFilteredByGlob("./posts/*.md");
+    });
 
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets"); // Если есть изображения и стили
-
-  return {
-    dir: {
-      input: ".",       // Входной каталог
-      output: "_site",  // Папка для выходных файлов
-      includes: "_includes",
-      data: "_data"
-    }
-  };
+    return {
+        dir: {
+            input: ".",
+            output: "_site"
+        }
+    };
 };

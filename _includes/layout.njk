@@ -11,7 +11,7 @@
     <h1 class="site-title">{{ title }}</h1>
 <h2>Последние новости</h2>
 <ul>
-  {% for post in pagination.items %}
+  {% for post in post.items %}
     <li class="news-item">
       {% if post.data.image %}
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="news-image">

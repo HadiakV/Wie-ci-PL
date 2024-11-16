@@ -11,8 +11,12 @@ pagination:
 <h2>Последние новости</h2>
 <ul>
   {% for post in pagination.items %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date | date("dd MMM yyyy") }}
+    <li class="news-item">
+      {% if post.data.image %}
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="news-image">
+      {% endif %}
+      <a href="{{ post.url }}" class="news-link">{{ post.data.title }}</a>
+      <span class="news-date">{{ post.date | date("dd MMM yyyy") }}</span>
     </li>
   {% endfor %}
 </ul>

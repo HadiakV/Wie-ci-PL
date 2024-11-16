@@ -12,6 +12,13 @@ body {
   color: #333;
 }
 
+.news-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 /* Заголовок */
 .header {
   background-color: #2ecc71;

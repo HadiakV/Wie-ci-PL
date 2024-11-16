@@ -12,15 +12,17 @@
     <h1 class="site-title">{{ title }}</h1>
 <h2>Последние новости</h2>
 <ul>
-  {% for post in post.items %}
-    <li class="news-item">
-      {% if post.data.image %}
-        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="news-image">
-      {% endif %}
-      <a href="{{ post.url }}" class="news-link">{{ post.data.title }}</a>
-      <span class="news-date">{{ post.date | date("dd MMM yyyy") }}</span>
-    </li>
-  {% endfor %}
+  <li class="news-item">
+    <img src="image1.jpg" alt="Заголовок новости 1" class="news-image">
+    <a href="post1.html" class="news-link">Заголовок новости 1</a>
+    <span class="news-date">16 Nov 2024</span>
+  </li>
+  <li class="news-item">
+    <img src="image2.jpg" alt="Заголовок новости 2" class="news-image">
+    <a href="post2.html" class="news-link">Заголовок новости 2</a>
+    <span class="news-date">15 Nov 2024</span>
+  </li>
+  <!-- и так далее -->
 </ul>
   </header>
   <main class="content">
